@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lacquer&family=League+Gothic&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+
+  <div id="hero">
+    <div id="sections-container">
+      <section class="slide current" id="kafka"></section>
+      <section class="slide" id="murakami"></section>
+      <section class="slide" id="orwell"></section>
+      <section class="slide" id="rand"></section>
+    </div>
+    <div id="section-overlay">
+      <div id="page-info">
+        <h4 id="cover">.COVER</h4>
+        <span id="page-name">Home</span>
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li id="0" class="control current-author">
+            <span>
+              01.
+            </span>
+            <a href="#">KAFKA</a>
+          </li>
+          <li id="1" class="control">
+            <span>
+              02.
+            </span>
+            <a href="#">MURAKAMI</a>
+          </li>
+          <li id="2" class="control">
+            <span>
+              03.
+            </span>
+            <a href="#">ORWELL</a>
+          </li>
+          <li id="3" class="control">
+            <span>
+              04.
+            </span>
+            <a href="#">RAND</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="social">
+        <ul>
+          <li>
+            <a>
+              <image src="../public/icons/Behance.svg" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <image src="../public/icons/Pinterest.svg" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <image src="../public/icons/instagram.svg" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <image src="../public/icons/Linkedin.svg" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <image src="../public/icons/dribbble.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div>
+      <h4 class="about-author">Franz Kafka</h4>
+      <h2 class="about-book"><span>The</span><br /> Metamorphosis</h2>
+      <div class="designer-info">
+        <image src="./public/icons/Mansvg.svg" width="40px" height="40px"  />
+        <div class="designer-social">
+          <p class="name">Ene Chu</p>
+          <p class="email">Ene@myportfolio.com</p>
+        </div>
+      </div>
+      <div class="more-info">
+        <div >
+          <div>
+            <span>Art Direction</span>
+            <span>Modern Baroque</span>
+          </div>
+          <div>
+            <span>Influenced By</span>
+            <span>Zdzisław Beksiński </span>
+          </div>
+          <div>
+            <span>Year</span>
+            <span>2022</span>
+          </div>
+        </div>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+          odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          Curabitur tempus urna at turpis condimentum lobortis. </p>
+        <div class="more">
+          <span>---</span>
+          <span>02. Murakami</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <image src="/public/images/kafka/kafka-1.png" width="256px" height="350px" />
+      <image class="extra" src="/public/images/kafka/kafka-2.png" width="256px" height="350px" />
+      <image class="small" src="/public/images/kafka/kafka-3.png" width="256px" height="350px" />
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
