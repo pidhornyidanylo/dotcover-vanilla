@@ -1,5 +1,6 @@
-import data from "../data.json";
-import { updateSlides } from "./main";
+import data from "../../data.json";
+import { updateSlides } from "../main";
+import "./about.css";
 
 export function applyAboutSectionData(currentIndex: number) {
   const aboutSection = document.getElementById("about");
@@ -14,38 +15,38 @@ export function applyAboutSectionData(currentIndex: number) {
         : "End of list";
 
     aboutSection.innerHTML = `
-      <div class="about-general">
+      <div>
         <h4 class="about-author">${currentData.publication.author}</h4>
-        <h2 class="about-book">${currentData.book_info.title}</h2>
+        <h2 class="about-bookTitle">${currentData.book_info.title}</h2>
         <div class="designer-info">
           <img src="./public/icons/Mansvg.svg" width="40px" height="40px" />
           <div class="designer-social">
-            <p class="name">${currentData.publication.cover_by}</p>
-            <p class="email">${currentData.publication.cover_author_email}</p>
+            <p>${currentData.publication.cover_by}</p>
+            <p class="designer-email">${currentData.publication.cover_author_email}</p>
           </div>
         </div>
-        <div class="more-info">
-          <div class="more-autor">
+        <div class="about-additionalInfo">
+          <div class="publish-info">
             <div>
-              <span>Art Direction</span>
-              <span>${currentData.publication.art_direction}</span>
+              <span class="info-field">Art Direction</span>
+              <span class="info-content">${currentData.publication.art_direction}</span>
             </div>
             <div>
-              <span>Influenced By</span>
-              <span>${currentData.publication.influenced_by}</span>
+              <span class="info-field">Influenced By</span>
+              <span class="info-content">${currentData.publication.influenced_by}</span>
             </div>
             <div>
-              <span>Year</span>
-              <span>${currentData.publication.year}</span>
+              <span class="info-field">Year</span>
+              <span class="info-content">${currentData.publication.year}</span>
             </div>
           </div>
-          <p>${currentData.book_info.text}</p>
-          <div class="more-arrow">
-            <span>
-              <span></span>
-              <span></span>
-            </span>
-            <span><a id="next-author">${nextAuthor}</a></span>
+          <p class="about-text">${currentData.book_info.text}</p>
+          <div class="about-footer">
+            <div class="about-arrow">
+              <span class="arrow-up"></span>
+              <span class="arrow-down"></span>
+            </div>
+            <span class="next-author"><a id="next-author">${nextAuthor}</a></span>
           </div>
         </div>
       </div>

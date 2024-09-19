@@ -1,16 +1,16 @@
-import data from "../data.json";
+import data from "../../data.json";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const index = params.get("index");
-  updateBookPageHtml(+index!);
+	const params = new URLSearchParams(window.location.search);
+	const index = params.get("index");
+	updateBookPageHtml(+index!);
 });
 
 function updateBookPageHtml(currentIndex: number) {
-  const bookContainer = document.getElementById("book-container");
-  const currentAuthor = data[currentIndex];
-  if (bookContainer) {
-    bookContainer.innerHTML = `
+	const bookContainer = document.getElementById("book-container");
+	const currentAuthor = data[currentIndex];
+	if (bookContainer) {
+		bookContainer.innerHTML = `
         <div class="page-info">
             <h4 class="app-title">.COVER</h4>
             <span class="page-title"><a href="/index.html">Home</a> > Projects</span>
@@ -88,11 +88,11 @@ function updateBookPageHtml(currentIndex: number) {
             </div>
         </section>
         `;
-  }
-  const rightSection = document.getElementById("right-section");
-  if (rightSection) {
-    rightSection.style.background = `url(${currentAuthor.images.bg_y})`;
-    rightSection.style.backgroundRepeat = "no-repeat";
-    rightSection.style.backgroundSize = "cover";
-  }
+	}
+	const rightSection = document.getElementById("right-section");
+	if (rightSection) {
+		rightSection.style.background = `url(${currentAuthor.images.bg_y})`;
+		rightSection.style.backgroundRepeat = "no-repeat";
+		rightSection.style.backgroundSize = "cover";
+	}
 }

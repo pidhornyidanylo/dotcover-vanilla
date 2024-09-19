@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Lacquer&family=League+Gothic&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
+  <title>.cover</title>
   <style>
     body {
       opacity: 0;
@@ -20,19 +20,19 @@
 </head>
 
 <body>
-  <div id="hero">
-    <div id="sections-container">
-      <section class="slide current" id="kafka"></section>
-      <section class="slide" id="murakami"></section>
-      <section class="slide" id="orwell"></section>
-      <section class="slide" id="rand"></section>
+  <section id="hero">
+    <div id="hero-slides">
+      <div class="slide current" id="kafka"></div>
+      <div class="slide" id="murakami"></div>
+      <div class="slide" id="orwell"></div>
+      <div class="slide" id="rand"></div>
     </div>
-    <div id="section-overlay">
-      <div class="page-info">
-        <h4 class="app-title">.COVER</h4>
-        <span class="page-title">Home > <a href="book.html?index=0">Kafka</a></span>
+    <div id="hero-overlay">
+      <div class="page-head">
+        <h4 class="page-logo">.COVER</h4>
+        <span class="page-route">Home > <a href="book.html?index=0">Kafka</a></span>
       </div>
-      <nav id="navigation">
+      <nav id="navigation-container">
         <ul class="navigation-list">
           <li id="0" class="control current-author">
             <span>
@@ -60,7 +60,7 @@
           </li>
         </ul>
       </nav>
-      <div id="social">
+      <div class="social-container">
         <ul class="social-list">
           <li>
             <a>
@@ -90,8 +90,8 @@
         </ul>
       </div>
     </div>
-  </div>
-  <div id="about"></div>
+  </section>
+  <section id="about"></section>
   <script type="module" src="/src/main.ts"></script>
   <script>
     window.addEventListener("load", function () {

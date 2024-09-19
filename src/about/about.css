@@ -1,0 +1,244 @@
+#about {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 100%;
+    min-height: 580px;
+    margin: 0;
+    padding: 38px 20px 38px 112px;
+    overflow: hidden;
+    scroll-snap-align: center;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.about-author {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.about-bookTitle {
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.about-bookTitle span {
+    font-weight: 300;
+}
+
+.designer-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.designer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.designer-social p {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.designer-email {
+    color: gray;
+}
+
+.about-additionalInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.publish-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.publish-info div {
+    display: flex;
+    gap: 40px;
+}
+
+.publish-info div span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+}
+
+.info-field {
+    width: 140px;
+    color: gray;
+    font-weight: 100;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.about-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.about-gallery {
+    display: flex;
+    gap: 32px;
+}
+
+
+.extra {
+    margin-top: 120px;
+}
+
+.small {
+    margin-top: 20px;
+    transform: scale(0.8);
+}
+
+.about-footer {
+    display: flex;
+    gap: 30px;
+}
+
+.about-arrow {
+    position: relative;
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+
+.arrow-up {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 1px;
+    top: 32px;
+    right: 0;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+
+.arrow-down {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 1px;
+    top: 38px;
+    right: 0;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+.next-author {
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.next-author a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+
+@media (max-width: 1800px) {
+    #about {
+        gap: 150px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-gallery {
+        gap: 25px;
+        width: 40vw;
+        flex-direction: column;
+    }
+
+    .extra {
+        margin: 0;
+    }
+
+    .small {
+        margin-top: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+@media (max-width: 1250px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .about-gallery {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #about {
+        gap: 50px;
+        padding-left: 40px;
+    }
+
+    .about-gallery {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 425px) {
+    .about-bookTitle {
+        font-size: 1.6em;
+    }
+
+    .publish-info div {
+        gap: 20px;
+    }
+
+    .publish-info div span {
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+    }
+
+    .about-text {
+        font-size: 1em;
+    }
+
+    .about-footer {
+        margin-top: 20px;
+    }
+}
