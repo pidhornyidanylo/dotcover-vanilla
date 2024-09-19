@@ -11,10 +11,15 @@
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + TS</title>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+  </style>
 </head>
 
 <body>
-
   <div id="hero">
     <div id="sections-container">
       <section class="slide current" id="kafka"></section>
@@ -25,7 +30,7 @@
     <div id="section-overlay">
       <div class="page-info">
         <h4 class="app-title">.COVER</h4>
-        <span class="page-title">Home</span>
+        <span class="page-title">Home > <a href="book.html?index=0">Kafka</a></span>
       </div>
       <nav id="navigation">
         <ul class="navigation-list">
@@ -33,25 +38,25 @@
             <span>
               01.
             </span>
-            <a href="#">KAFKA</a>
+            <div>KAFKA</div>
           </li>
           <li id="1" class="control">
             <span>
               02.
             </span>
-            <a href="#">MURAKAMI</a>
+            <div>MURAKAMI</div>
           </li>
           <li id="2" class="control">
             <span>
               03.
             </span>
-            <a href="#">ORWELL</a>
+            <div>ORWELL</div>
           </li>
           <li id="3" class="control">
             <span>
               04.
             </span>
-            <a href="#">RAND</a>
+            <div>RAND</div>
           </li>
         </ul>
       </nav>
@@ -88,6 +93,11 @@
   </div>
   <div id="about"></div>
   <script type="module" src="/src/main.ts"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.style.opacity = "1";
+    });
+  </script>
 </body>
 
 </html>

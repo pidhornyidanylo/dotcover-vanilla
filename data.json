@@ -17,6 +17,7 @@
            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
       },
       "images": {
+        "bg_y": "./public/images/kafka/kafka-bg-y.png",
         "first_prewiev": "/public/images/kafka/kafka-1.png",
         "second_prewiev": "/public/images/kafka/kafka-2.png",
         "third_prewiev": "/public/images/kafka/kafka-3.png"
@@ -40,6 +41,7 @@
            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
       },
       "images": {
+        "bg_y": "./public/images/murakami/norwegian+wood-y-2.jpg",
         "first_prewiev": "/public/images/murakami/norwegian-wood-12.png",
         "second_prewiev": "/public/images/murakami/norwegian-wood-13.png",
         "third_prewiev": "/public/images/murakami/norwegian-wood-15.png"
@@ -63,9 +65,10 @@
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
       },
       "images": {
-        "first_prewiev": "/public/images/orwell/orwell-13.png",
-        "second_prewiev": "/public/images/orwell/orwell-12.png",
-        "third_prewiev": "/public/images/orwell/orwell-11.png"
+        "bg_y": "./public/images/orwell/orwell-bg-y.jpg",
+        "first_prewiev": "/public/images/orwell/orwell-131.png",
+        "second_prewiev": "/public/images/orwell/orwell-121.png",
+        "third_prewiev": "/public/images/orwell/orwell-111.png"
       }
   },
   {
@@ -86,9 +89,10 @@
            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
       },
       "images": {
-        "first_prewiev": "/public/images/rand/atlas-13.png",
-        "second_prewiev": "/public/images/rand/atlas-12.png",
-        "third_prewiev": "/public/images/rand/atlas-11.png"
+        "bg_y": "./public/images/rand/atlas-bg-y.jpg",
+        "first_prewiev": "/public/images/rand/atlas-131.png",
+        "second_prewiev": "/public/images/rand/atlas-121.png",
+        "third_prewiev": "/public/images/rand/atlas-111.png"
       }
   }
 ]
