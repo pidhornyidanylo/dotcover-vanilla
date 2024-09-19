@@ -6,3 +6,6 @@ Open folder in your code editor and run command 'npm i', then run 'npm run dev'
 
 # structure
 Now all data is hardcoded, so no API needed. 
+
+# data
+Data been stored in data.json. Structure is flat enough so you can add it to database and refactor code to work with async requests and dynamicly fetch data for about section and for full cover paga as well. 
