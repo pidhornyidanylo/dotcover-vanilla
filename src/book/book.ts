@@ -11,40 +11,40 @@ function updateBookPageHtml(currentIndex: number) {
 	const currentAuthor = data[currentIndex];
 	if (bookContainer) {
 		bookContainer.innerHTML = `
-        <div class="page-info">
-            <h4 class="app-title">.COVER</h4>
-            <span class="page-title"><a href="/index.html">Home</a> > Projects</span>
+        <div class="page-head">
+            <h4 class="page-logo">.COVER</h4>
+            <span class="page-route"><a href="/index.html">Home</a> > Projects</span>
         </div>
         <section id="left-section">
-            <div class="more-autor-book">
-                <div>
+            <div class="book-addinfo">
+                <div class="addinfo-item">
                     <span>Author</span>
                     <span>${currentAuthor.publication.author}</span>
                 </div>
-                <div>
+                <div class="addinfo-item">
                     <span>Original Title</span>
                     <span>${currentAuthor.publication.original_title}</span>
                 </div>
-                <div>
+                <div class="addinfo-item">
                     <span>Language</span>
                     <span>${currentAuthor.publication.language}</span>
                 </div>
-                <div>
+                <div class="addinfo-item">
                     <span>Publisher</span>
                     <span>${currentAuthor.publication.publisher}</span>
                 </div>
-                <div>
+                <div class="addinfo-item">
                     <span>Publication date</span>
                     <span>${currentAuthor.publication.publication_date}</span>
                 </div>
-                <div>
+                <div class="addinfo-item">
                     <span>Cover by</span>
                     <span>${currentAuthor.publication.cover_by}</span>
                 </div>
             </div>
-            <div class="more-book-book">
-                <h4 class="about-author">${currentAuthor.publication.author}</h4>
-                <h2 class="about-book">${currentAuthor.book_info.title}</h2>
+            <div class="main-info">
+                <h4 class="book-author">${currentAuthor.publication.author}</h4>
+                <h2 class="book-title">${currentAuthor.book_info.title.split(' ')[0]}</br>${currentAuthor.book_info.title.split(' ')[1]}</h2>
                 <div class="designer-info">
                     <img src="./public/icons/Mansvg.svg" width="40px" height="40px" />
                     <div class="designer-social">

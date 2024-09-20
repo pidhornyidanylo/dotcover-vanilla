@@ -15,6 +15,7 @@ body {
 
 #right-section {
 	width: 90vw;
+	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -46,7 +47,7 @@ body {
 	transform: scale(1.3);
 }
 
-.page-info {
+.page-head {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -56,24 +57,26 @@ body {
 	color: black;
 }
 
-.app-title {
+.page-logo {
 	font-family: "Libre Franklin", sans-serif;
 	font-size: 1.8em;
 	font-weight: 900;
 	margin: 0 0 33px;
 }
 
-.page-title {
+.page-route {
 	font-family: "Poppins", sans-serif;
 	text-align: start;
 	font-size: 1.2em;
 	font-weight: lighter;
+	font-weight: 600;
+
 }
 
-.page-title a {
+.page-route a {
 	color: black;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 #left-section {
@@ -82,39 +85,46 @@ body {
 	padding: 38px 86px 38px 112px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 200px;
+	justify-content: space-between;
 }
 
-.more-autor-book {
+.book-addinfo {
 	align-self: flex-end;
-	padding-top: 58px;
+	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.more-autor-book div {
+.addinfo-item {
 	display: flex;
 	gap: 40px;
 }
 
-.more-autor-book div span {
+.addinfo-item span {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.3em;
 }
 
-.more-autor-book div span:first-child {
+.addinfo-item span:first-child {
 	width: 200px;
 	color: gray;
 	font-weight: 100;
 }
 
-.more-autor-book div span:last-child {
+.addinfo-item span:last-child {
 	flex: 1;
 }
 
-.more-book-book .about-author {
+.main-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-grow: inherit;
+}
+
+.book-author {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
@@ -122,36 +132,36 @@ body {
 	margin-bottom: 12px;
 }
 
-.more-book-book .about-book {
+.book-title {
 	font-family: "Libre Caslon Text", sans-serif;
 	font-weight: 600;
-	font-size: 3em;
-	margin: 0 0 20px;
+	font-size: 3.5em;
+	margin: 0 0 40px;
 }
 
 .designer-info {
 	display: flex;
 	gap: 15px;
 	align-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-.designer-info div {
+.designer-social {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
 
-.designer-info div p {
+.designer-social p {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 }
 
-.designer-info div p:last-child {
+.designer-social p:last-child {
 	color: gray;
 }
 
-.more-book-book p {
+.main-info p {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.2em;
 	color: gray;
@@ -170,17 +180,86 @@ body {
 	width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
 	background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
+}
+
+
+
+@media (max-width: 1800px) {
+	#left-section {
+		padding-right: 20px;
+	}
+
+	.addinfo-item {
+		display: flex;
+		gap: 20px;
+	}
+
+	.addinfo-item span {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.2em;
+	}
+
+	.addinfo-item span:first-child {
+		width: 110px;
+	}
+}
+
+@media (max-width: 1250px) {
+	#left-section {
+		padding-left: 20px;
+	}
+
+	.page-head {
+		left: 20px;
+	}
+
+	.addinfo-item span {
+		font-family: "Poppins", sans-serif;
+		font-size: 1em;
+	}
+
+	.addinfo-item {
+		gap: 10px;
+	}
+
+	.addinfo-item span:first-child {
+		width: 90px;
+	}
+}
+
+@media (max-width: 992px) {
+	body {
+		overflow-y: scroll;
+	}
+	#left-section {
+		gap: 100px;
+	}
+
+	#right-section {
+		display: none;
+	}
+
+}
+
+@media (max-width: 425px) {
+	.book-addinfo {
+		padding-top: 120px;
+		align-self: flex-start;
+	}
+	.book-title {
+		font-size: 2em;
+	}
+	p {
+		text-align: justify;
+	}
 }
